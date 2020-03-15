@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rel_lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy_stories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:id="@+id/line1"
+                android:layout_below="@+id/recy_stories"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha=".2"
+                android:background="@android:color/black"
+                android:layout_marginTop="10dp"
+                ></View>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_feed"
+            android:layout_below="@+id/rel_lay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</ScrollView>
